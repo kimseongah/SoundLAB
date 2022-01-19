@@ -1,0 +1,7 @@
+Timbral Models(hardness, depth, brightness, roughness, warmth, sharpness, and booming)
+    https://github.com/AudioCommons/timbral_models 
+
+FS
+https://kr.mathworks.com/help/audio/ref/acousticfluctuation.html#d123e9746
+->matlab https://ok97465.github.io/2018/10/181030_MatlabApiInPython
+Tones? https://stackoverflow.com/questions/26490685/generating-wav-file-tones

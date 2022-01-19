@@ -1,0 +1,14 @@
+
+1. 음원에서 SQ(1. Loudness(파), 2. Sharpness(timbral?), 3. Roughness(timbral?), 4. Fluctuation strength(matlab), 5. Tonality)를 알아내는 코드 찾기
+2. 한 음원에서 0.3초 간격으로 SQ 알아내서 csv파일 5개 만드는 코드 작성
+3. 이 파일들 각각으로 이미지 파일 따로 만들고 SQ 상관없이 모델 데이터로 넣는 CNN모델 구현(이유는 모르겠지만 SQ 상관없이 한 번에 넣으니까 정확도가 제일 높음)
+*ArtemiS로 한 작업이 SQ 파라미터 알아내는 것인데 파이썬으로 알아낼 수 있기 때문에 아직 ArtemiS가 필요하지 않음. 잔향 추가하는 과정도 test데이터는 그대로 모델에 넣어서 돌리면 되고 잔향을 추가할 필요가 없기 때문에 이미 있는 잔향이 추가된 데이터로 충분함.
+
+ArtemiS 는 분석 프로그램 이름이고
+우리가 찾아봐야 할 것은 
+* SQ parameter (Sound Quality)
+* Zwicker parameter
+* 심리음향지표
+다 비슷한 말입니다. 
+위 파라메터들에는 
+1. Loudness, 2. Sharpness, 3. Roughness, 4. Fluctuation strength, 5. Tonality 이렇게 있어요 각각 단위도 다르고 의미도 다른데요, 그냥 어떻게 계산되는지 보고 식으로 만들어 삽입할 수 있으면 될 것 같아요.
