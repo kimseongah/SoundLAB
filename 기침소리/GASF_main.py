@@ -1,3 +1,4 @@
+from turtle import xcor
 import numpy as np
 import matplotlib.pyplot as plt
 from pyts.image import GramianAngularField
@@ -5,7 +6,7 @@ import os
 
 #raw data 불러오기
 
-main_dir = 'D:/Projects/Main_Code/testt' 
+main_dir = 'C:/Users/kimsa/Documents/SoundLAB/기침소리/sample/Sharpness/mak' 
 
 def get_csv_files(main_dir):
     csv_files = []
@@ -22,7 +23,8 @@ csv_files = get_csv_files(main_dir)
 count = 0
 for csv_file in csv_files:
     csv_name = csv_file.split('/')[-1].split('.')                               
-    x = np.loadtxt(open(csv_file,encoding="utf-8"),delimiter=";",usecols=(1),max_rows=15).T
+    x = np.loadtxt(open(csv_file,encoding="utf-8"),delimiter=";",usecols=(1),max_rows=30).T
+    print(x)
     # print(type(x),x.shape)
     X = x[:]
     X = X.reshape(1, -1)
@@ -44,20 +46,20 @@ for csv_file in csv_files:
     # plt.subplot(122)
     # plt.imshow(X_gadf[0], cmap='rainbow', origin='lower')
     # plt.title("GADF", fontsize=16)
-    plt.savefig('D:/Projects/Main_Code/newimg'+'/'+str(count)+'.png')
+    plt.savefig(main_dir+'/'+str(count)+'.png')
     plt.close()
     count +=1
 
-#%%
-#이미지 흰 배경 자르기
-from PIL import Image    
-import os
-maindir = 'D:/Projects/Main_Code/Parameters/Validation/testothers/a'
-for parent, dirnames, filenames in os.walk(maindir):        
- for filename in filenames:
-        pic_name = os.path.join(parent, filename)
-        img= Image.open(pic_name)
-        img=img.convert('RGB')
-        caijian = img.crop((8,5,342,222))
-        caijian.save('D:/Projects/Main_Code/Parameters/Validation/testothers/a/'+filename)
+# #%%
+# #이미지 흰 배경 자르기
+# from PIL import Image    
+# import os
+# maindir = 'D:/Projects/Main_Code/Parameters/Validation/testothers/a'
+# for parent, dirnames, filenames in os.walk(maindir):        
+#  for filename in filenames:
+#         pic_name = os.path.join(parent, filename)
+#         img= Image.open(pic_name)
+#         img=img.convert('RGB')
+#         caijian = img.crop((8,5,342,222))
+#         caijian.save('D:/Projects/Main_Code/Parameters/Validation/testothers/a/'+filename)
  

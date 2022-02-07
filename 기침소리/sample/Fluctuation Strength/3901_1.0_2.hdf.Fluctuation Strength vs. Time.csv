@@ -1,0 +1,48 @@
+Time file:	D:\1.0_±â°üÁö¿°\3901_1.0_2.hdf
+Mark:		3901_1.0_2.hdf (0.00 - 1.74 s)
+Filter:	
+Analysis:	Fluctuation Strength vs. Time
+Statistic:	Ch1
+Kind:	FluctuationStrength
+Abscissa 1:	Time,s
+Channel 1:	Ch1,Fluctuation Strength,vacil,F=0.178 vacil
+Comment:
+Imported from '3901_1.0_2.wav'
+Original Features:
+Format / Compression:	Pcm
+Resolution:		16 bits per sample
+Sampling Frequency:	48000 Hz
+Number of Channels:	1
+User Information:
+
+
+0;0
+0.06;0
+0.12;0
+0.18;3.2526e-09
+0.24;4.48089e-07
+0.3;7.75717e-06
+0.36;8.36893e-05
+0.42;0.000423714
+0.48;0.00160205
+0.54;0.00440514
+0.6;0.0103405
+0.66;0.0204153
+0.72;0.0361035
+0.78;0.057374
+0.84;0.0804057
+0.9;0.11238
+0.96;0.148521
+1.02;0.187785
+1.08;0.228451
+1.14;0.269045
+1.2;0.308136
+1.26;0.339322
+1.32;0.371928
+1.38;0.399988
+1.44;0.422412
+1.5;0.439375
+1.56;0.450389
+1.62;0.463223
+1.68;0.488205
+1.74;0.500355

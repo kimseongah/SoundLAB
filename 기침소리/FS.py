@@ -12,7 +12,7 @@ eng.desktop(nargout=0)
 
 # print(fluctuation)
 
-data = eng.audioread('file_example_WAV_1MG.wav')
-fluctuation = eng.acousticFluctuation(data[0])
+eng.eval("[audioIn,fs]=audioread('file_example_WAV_1MG.wav');", nargout=0)
+fluctuation = eng.eval("acousticFluctuation(audioIn,fs);")
 
 print(fluctuation)

@@ -1,0 +1,6 @@
+아래 애들을 원래 뭐로 측정한 건지
+-Lmax : https://kr.mathworks.com/help/audio/ref/splmeter-system-object.html
+      - LAmax -> 없음
+      - Li -> 없음
+	- Fmax : https://hub.salford.ac.uk/sirc-acoustics/psychoacoustics/sound-quality-making-products-sound-better/an-introduction-to-sound-quality-testing/matlab-codes/ 를 참고하면 나올지도..?
+      -  DR, decay rate, defined as the sound pressure level (SPL) decrease per second [dB/s] ->없음
